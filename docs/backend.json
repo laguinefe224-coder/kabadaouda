@@ -1,0 +1,159 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Represents a user in the system.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "The user's unique identifier."
+        },
+        "name": {
+          "type": "string",
+          "description": "The user's full name."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The user's email address."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["admin", "editor"],
+          "description": "The user's role."
+        }
+      },
+      "required": ["uid", "name", "email", "role"]
+    },
+    "Portfolio": {
+      "title": "Portfolio",
+      "description": "Represents the portfolio/CV data.",
+      "type": "object",
+      "properties": {
+        "profile": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "title": { "type": "string" },
+            "birth": { "type": "string" },
+            "nationality": { "type": "string" },
+            "email": { "type": "string", "format": "email" }
+          },
+          "required": ["name", "title", "birth", "nationality", "email"]
+        },
+        "skills": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "experience": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "year": { "type": "string" },
+              "title": { "type": "string" },
+              "desc": { "type": "string" }
+            },
+            "required": ["year", "title", "desc"]
+          }
+        }
+      },
+      "required": ["profile", "skills", "experience"]
+    },
+    "DirectoryContact": {
+        "title": "Directory Contact",
+        "description": "A contact in the directory.",
+        "type": "object",
+        "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "phone": { "type": "string" },
+            "position": { "type": "string" }
+        },
+        "required": ["name", "email"]
+    },
+    "Message": {
+        "title": "Message",
+        "description": "A message from the contact form.",
+        "type": "object",
+        "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "message": { "type": "string" },
+            "createdAt": { "type": "string", "format": "date-time" },
+            "status": { "type": "string", "enum": ["read", "unread"], "default": "unread" }
+        },
+        "required": ["name", "email", "message", "createdAt"]
+    },
+    "News": {
+        "title": "News Article",
+        "description": "Represents a news article for the blog.",
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string"
+            },
+            "content": {
+                "type": "string"
+            },
+            "author": {
+                "type": "string"
+            },
+            "imageUrl": {
+                "type": "string",
+                "format": "uri"
+            },
+            "published": {
+                "type": "boolean"
+            },
+            "createdAt": {
+                "type": "string",
+                "format": "date-time"
+            }
+        },
+        "required": [
+            "title",
+            "content",
+            "author",
+            "published",
+            "createdAt"
+        ]
+    }
+  },
+  "auth": {
+    "providers": ["password"]
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/User"
+      },
+      "description": "Stores user profile information."
+    },
+    "/portfolio/{portfolioId}": {
+        "schema": {
+            "$ref": "#/entities/Portfolio"
+        },
+        "description": "Stores portfolio data for a person."
+    },
+    "/directoryContacts/{contactId}": {
+        "schema": {
+            "$ref": "#/entities/DirectoryContact"
+        },
+        "description": "Stores contacts for the directory."
+    },
+    "/messages/{messageId}": {
+        "schema": {
+            "$ref": "#/entities/Message"
+        },
+        "description": "Stores messages from the contact form."
+    },
+    "/news/{newsId}": {
+      "schema": {
+        "$ref": "#/entities/News"
+      },
+      "description": "Stores news articles for the blog."
+    }
+  }
+}
