@@ -23,9 +23,6 @@ export function Footer() {
 
     return (
         <footer className="bg-slate-950 text-slate-200 pt-24 pb-12 overflow-hidden relative">
-            {/* Background pattern */}
-            <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-5" />
-            
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Identity */}
