@@ -40,8 +40,13 @@ export function Footer() {
                             Consul Général Honoraire engagé pour une diplomatie de proximité et le renforcement des liens internationaux.
                         </p>
                         <div className="flex gap-4">
-                            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                                <a key={i} href="#" className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center border border-slate-800 hover:bg-primary hover:border-primary transition-all group">
+                            {[
+                                { Icon: Facebook, label: "Facebook" },
+                                { Icon: Twitter, label: "Twitter" },
+                                { Icon: Instagram, label: "Instagram" },
+                                { Icon: Linkedin, label: "Linkedin" }
+                            ].map(({ Icon, label }, i) => (
+                                <a key={i} href="#" aria-label={label} className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center border border-slate-800 hover:bg-primary hover:border-primary transition-all group">
                                     <Icon className="w-5 h-5 group-hover:text-white" />
                                 </a>
                             ))}

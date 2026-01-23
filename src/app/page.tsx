@@ -244,7 +244,7 @@ export default function Home() {
                   Consul général honoraire
                 </p>
                 <Button asChild className="bg-green-600 hover:bg-green-700 text-white font-black px-10 py-6 rounded-full text-lg shadow-xl shadow-green-900/20 group">
-                  <a href="https://wa.me/224621792892" target="_blank" className="flex items-center">
+                  <a href="https://wa.me/224621792892" target="_blank" rel="noopener noreferrer" className="flex items-center">
                     Me contacter sur WhatsApp
                     <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </a>
