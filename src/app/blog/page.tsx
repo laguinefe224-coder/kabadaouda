@@ -26,6 +26,15 @@ type Article = {
 const staticArticles: Article[] = [
     {
     id: '1',
+    title: "𝐌𝐢𝐬𝐞 𝐞𝐧 œ𝐮𝐯𝐫𝐞 𝐝𝐞 𝐥𝐚 𝐯𝐢𝐬𝐢𝐨𝐧 𝐒𝐢𝐦𝐚𝐧𝐝𝐨𝐮 𝟐0𝟒0: 𝐯𝐞𝐫𝐬 𝐮𝐧𝐞 𝐠𝐞𝐬𝐭𝐢𝐨𝐧 𝐢𝐧𝐧𝐨𝐯𝐚𝐧𝐭𝐞 𝐝𝐞𝐬 𝐝é𝐜𝐡𝐞𝐭𝐬 à 𝐂𝐨𝐧𝐚𝐤𝐫𝐲,𝐫𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐞 𝐚𝐯𝐞𝐜 𝐕𝐢𝐜𝐭𝐨𝐫𝐲 𝐈𝐧𝐯𝐞𝐬𝐭𝐦𝐞𝐧𝐭 ",
+    author: "Daouda Kaba",
+    createdAt: "2026-01-28T10:00:00Z",
+    imageUrl: "/images/daoudakabajanv.png",
+    content: "Le secrétaire général du Ministère de l’Assainissement, de l’Hydraulique et des Hydrocarbures, M. Bachir CAMARA, a reçu en audience, ce mercredi 28 janvier 2026, une délégation de la société chinoise Victory Investment, dans le cadre d’une séance de travail consacrée aux perspectives de modernisation de la gestion des déchets en République de Guinée".
+    imageHint: "Relation Internationale"
+  },
+  {
+    id: '2',
     title: "L'Innovation au service de la Diplomatie Moderne",
     author: "Daouda Kaba",
     createdAt: "2024-07-20T10:00:00Z",
@@ -34,7 +43,7 @@ const staticArticles: Article[] = [
     imageHint: "technology innovation"
   },
   {
-    id: '2',
+    id: '3',
     title: "Le Futur Numérique de l'Afrique : Une Opportunité Globale",
     author: "Daouda Kaba",
     createdAt: "2024-07-18T14:30:00Z",
@@ -43,7 +52,7 @@ const staticArticles: Article[] = [
     imageHint: "digital africa"
   },
   {
-    id: '3',
+    id: '4',
     title: "Énergies Vertes : Le Nouveau Paradigme de la Coopération Internationale",
     author: "Daouda Kaba",
     createdAt: "2024-07-15T09:00:00Z",
@@ -52,7 +61,7 @@ const staticArticles: Article[] = [
     imageHint: "green energy"
   },
   {
-    id: '4',
+    id: '5',
     title: "Construire des Ponts : Le Rôle Clé de la Coopération Sud-Sud",
     author: "Daouda Kaba",
     createdAt: "2024-07-12T11:00:00Z",
