@@ -27,10 +27,10 @@ export default function AboutPage() {
                                 <h2 className="font-headline text-2xl font-bold mb-4">Un Parcours au Service de la Coopération</h2>
                                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                                       Daouda Kaba, Consul Général Honoraire, est un diplomate engagé, dirigeant et expert financier reconnu pour son approche moderne et pragmatique de la coopération internationale. Il œuvre activement au renforcement des relations bilatérales, à la protection des citoyens et à la promotion d’une diplomatie de proximité fondée sur le dialogue, la confiance et la performance institutionnelle. Sa vision est orientée vers la construction de partenariats durables et le développement de mécanismes de gouvernance efficaces.
                                     </p>
                                     <p>
-                                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
+                                        Fort d’un parcours international solide, Daouda Kaba dispose d’une expertise approfondie en finance, audit, contrôle de gestion et management stratégique. Diplômé de l’Université Erasmus de Rotterdam et certifié en audit, conformité et lutte contre le blanchiment, il a occupé des fonctions de direction dans les secteurs public et privé, notamment en tant que PDG et responsable audit. Polyglotte, il met ses compétences au service d’une diplomatie moderne, innovante et résolument tournée vers l’avenir.
                                     </p>
                                 </div>
                             </div>
