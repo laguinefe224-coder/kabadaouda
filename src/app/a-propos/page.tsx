@@ -53,7 +53,7 @@ export default function AboutPage() {
                     <div className="aspect-w-16 aspect-h-9 w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
                         <iframe 
                             className="w-full h-full"
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            src="https://www.youtube.com/embed/JaBBcOhVdbo" 
                             title="YouTube video player" 
                             frameBorder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
