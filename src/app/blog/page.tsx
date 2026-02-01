@@ -30,8 +30,8 @@ const staticArticles: Article[] = [
     author: "Daouda Kaba",
     createdAt: "2026-01-28T10:00:00Z",
     imageUrl: "/images/daoudakabajanv.png",
-    content: "Le secrétaire général du Ministère de l’Assainissement, de l’Hydraulique et des Hydrocarbures, M. Bachir CAMARA, a reçu en audience, ce mercredi 28 janvier 2026, une délégation de la société chinoise Victory Investment, dans le cadre d’une séance de travail consacrée aux perspectives de modernisation de la gestion des déchets en République de Guinée".
-    imageHint: "Relation Internationale"
+    content: "Le secrétaire général du Ministère de l’Assainissement, de l’Hydraulique et des Hydrocarbures, M. Bachir CAMARA, a reçu en audience, ce mercredi 28 janvier 2026, une délégation de la société chinoise Victory Investment, dans le cadre d’une séance de travail consacrée aux perspectives de modernisation de la gestion des déchets en République de Guinée",
+    imageHint: "Relation Internationale",
   },
   {
     id: '2',
